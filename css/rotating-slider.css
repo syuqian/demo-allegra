@@ -1,0 +1,93 @@
+.rotating-slider {
+    margin: 5em auto;
+    height: 360px;
+    position: relative;
+    width: 480px;
+}
+
+.rotating-slider ul.direction-controls {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rotating-slider ul.direction-controls li.left-arrow {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.rotating-slider ul.direction-controls li.right-arrow {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.rotating-slider ul.direction-controls li button {
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding: 0;
+    text-align: center;
+    transition: background 0.25s;
+    width: 1.5em;
+}
+
+.rotating-slider ul.direction-controls li button:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.rotating-slider ul.slides {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(-77.1429deg);
+    -webkit-transform: translateX(-50%) rotate(-77.1429deg);
+    -moz-transform: translateX(-50%) rotate(-77.1429deg);
+    -ms-transform: translateX(-50%) rotate(-77.1429deg);
+    -o-transform: translateX(-50%) rotate(-77.1429deg);
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+    -webkit-transition: transform 0.6s ease-in-out;
+    -moz-transition: transform 0.6s ease-in-out;
+    -ms-transition: transform 0.6s ease-in-out;
+    -o-transition: transform 0.6s ease-in-out;
+}
+
+.rotating-slider ul.slides li {
+    display: block;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    transform-origin: bottom center;
+    -webkit-transform-origin: bottom center;
+    -moz-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    -o-transform-origin: bottom center;
+    width: 100%;
+}
